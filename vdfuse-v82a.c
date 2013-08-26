@@ -80,12 +80,13 @@ void VD_destroy (void *u);
 PVBOXHDD hdDisk;
 PVDINTERFACE pVDifs = NULL;
 VDINTERFACE vdError;
+/*
 VDINTERFACEERROR vdErrorCallbacks = {
 	.cbSize = sizeof (VDINTERFACEERROR),
 	.enmInterface = VDINTERFACETYPE_ERROR,
 	.pfnError = vdErrorCallback
 };
-
+*/
 // Partition table information
 
 typedef struct
@@ -262,8 +263,13 @@ main (int argc, char **argv)
 //
 // *** Open the VDI, parse the MBR + EBRs and connect to the fuse service ***
 //
-	if (RT_FAILURE (VDInterfaceAdd (&vdError, "VD Error", VDINTERFACETYPE_ERROR,
-																	&vdErrorCallbacks, NULL, &pVDifs)))
+
+// Replaced for test Thorsten
+//	if (RT_FAILURE (VDInterfaceAdd (&vdError, "VD Error", VDINTERFACETYPE_ERROR,
+//																	&vdErrorCallbacks, 0, &pVDifs)))
+
+    if (RT_FAILURE (VDInterfaceAdd (&vdError, "VD Error", VDINTERFACETYPE_ERROR,
+																	NULL, 0, &pVDifs)))
 		usageAndExit ("invalid initialisation of VD interface");
 	if (RT_FAILURE (VDCreate (&vdError, VDTYPE_HDD, &hdDisk)))
 		usageAndExit ("invalid initialisation of VD interface");
@@ -361,6 +367,18 @@ vbprintf (const char *format, ...)
 	fflush (stdout);
 }
 
+/**
+ * Informational message callback. May be NULL. Used e.g. in
+ * VDDumpImages(). Must be able to accept special IPRT format strings.
+ *
+ * @param   pvUser          The opaque data passed on container creation.
+ * @param   rc              The error code
+ * @param   file
+ * @param   iLine
+ * @param   function
+ * @param   format       Message format string.
+ * @param   va              Message arguments.
+ */
 void
 vdErrorCallback (void *pvUser UNUSED, int rc, const char *file,
 								 unsigned iLine, const char *function, const char *format,
