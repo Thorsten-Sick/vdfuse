@@ -1,0 +1,545 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/vbox/!svn/ver/35662/trunk/include/iprt
+END
+memtracker.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vbox/!svn/ver/32431/trunk/include/iprt/memtracker.h
+END
+alloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/alloc.h
+END
+asmdefs.mac
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vbox/!svn/ver/30943/trunk/include/iprt/asmdefs.mac
+END
+alloca.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/31847/trunk/include/iprt/alloca.h
+END
+handle.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/33973/trunk/include/iprt/handle.h
+END
+path.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/35218/trunk/include/iprt/path.h
+END
+dbg.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/dbg.h
+END
+lockvalidator.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/lockvalidator.h
+END
+zip.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/34045/trunk/include/iprt/zip.h
+END
+cpuset.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/cpuset.h
+END
+poll.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/poll.h
+END
+uuid.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/uuid.h
+END
+crc.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/crc.h
+END
+mempool.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/mempool.h
+END
+sg.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vbox/!svn/ver/31583/trunk/include/iprt/sg.h
+END
+mp.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/mp.h
+END
+process.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/35558/trunk/include/iprt/process.h
+END
+ldr.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/35191/trunk/include/iprt/ldr.h
+END
+memory
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/30681/trunk/include/iprt/memory
+END
+isofs.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/33494/trunk/include/iprt/isofs.h
+END
+ntwrap.mac
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/25338/trunk/include/iprt/ntwrap.mac
+END
+message.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/message.h
+END
+cdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/35510/trunk/include/iprt/cdefs.h
+END
+md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/34449/trunk/include/iprt/md5.h
+END
+uni.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/33560/trunk/include/iprt/uni.h
+END
+time.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/time.h
+END
+vfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/34967/trunk/include/iprt/vfs.h
+END
+param.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/35218/trunk/include/iprt/param.h
+END
+assert.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/33520/trunk/include/iprt/assert.h
+END
+memcache.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/memcache.h
+END
+manifest.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/34845/trunk/include/iprt/manifest.h
+END
+fs.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vbox/!svn/ver/34017/trunk/include/iprt/fs.h
+END
+vfslowlevel.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vbox/!svn/ver/34435/trunk/include/iprt/vfslowlevel.h
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/34406/trunk/include/iprt/list.h
+END
+asm-amd64-x86.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vbox/!svn/ver/31427/trunk/include/iprt/asm-amd64-x86.h
+END
+mem.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/35294/trunk/include/iprt/mem.h
+END
+test.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/32795/trunk/include/iprt/test.h
+END
+once.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/33262/trunk/include/iprt/once.h
+END
+buildconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vbox/!svn/ver/33680/trunk/include/iprt/buildconfig.h
+END
+Makefile.kup
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vbox/!svn/ver/31853/trunk/include/iprt/Makefile.kup
+END
+localipc.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/localipc.h
+END
+tcp.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/tcp.h
+END
+runtime-loader.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/runtime-loader.h
+END
+req.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/req.h
+END
+sort.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/sort.h
+END
+table.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/30788/trunk/include/iprt/table.h
+END
+initterm.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/initterm.h
+END
+power.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/power.h
+END
+condvar.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/condvar.h
+END
+pipe.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/33973/trunk/include/iprt/pipe.h
+END
+err.mac
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/35593/trunk/include/iprt/err.mac
+END
+getopt.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/33911/trunk/include/iprt/getopt.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/35662/trunk/include/iprt/types.h
+END
+stdint.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/stdint.h
+END
+string.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/35585/trunk/include/iprt/string.h
+END
+asm-math.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/29257/trunk/include/iprt/asm-math.h
+END
+memobj.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/memobj.h
+END
+uint128.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/35492/trunk/include/iprt/uint128.h
+END
+sha.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/34449/trunk/include/iprt/sha.h
+END
+err.sed
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/err.sed
+END
+circbuf.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/33291/trunk/include/iprt/circbuf.h
+END
+heap.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/heap.h
+END
+cidr.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/cidr.h
+END
+avl.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/34218/trunk/include/iprt/avl.h
+END
+spinlock.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/spinlock.h
+END
+runtime.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/31847/trunk/include/iprt/runtime.h
+END
+semaphore.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/semaphore.h
+END
+system.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/system.h
+END
+s3.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/s3.h
+END
+env.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/env.h
+END
+err.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/35182/trunk/include/iprt/err.h
+END
+stream.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/stream.h
+END
+strcache.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/strcache.h
+END
+handletable.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/handletable.h
+END
+coredumper.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vbox/!svn/ver/32411/trunk/include/iprt/coredumper.h
+END
+thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/thread.h
+END
+dir.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/33820/trunk/include/iprt/dir.h
+END
+file.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/34435/trunk/include/iprt/file.h
+END
+asm.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/35004/trunk/include/iprt/asm.h
+END
+critsect.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/33269/trunk/include/iprt/critsect.h
+END
+timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/32572/trunk/include/iprt/timer.h
+END
+log.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/log.h
+END
+rand.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/rand.h
+END
+base64.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/33540/trunk/include/iprt/base64.h
+END
+ctype.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/vbox/!svn/ver/34710/trunk/include/iprt/ctype.h
+END
+stdarg.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/stdarg.h
+END
+net.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/net.h
+END
+symlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/33676/trunk/include/iprt/symlink.h
+END
+tar.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/33804/trunk/include/iprt/tar.h
+END
+socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/vbox/!svn/ver/32276/trunk/include/iprt/socket.h
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vbox/!svn/ver/34571/trunk/include/VBox/HostServices
+END
+VBoxClipboardSvc.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vbox/!svn/ver/28800/trunk/include/VBox/HostServices/VBoxClipboardSvc.h
+END
+wglext.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vbox/!svn/ver/4172/trunk/include/VBox/HostServices/wglext.h
+END
+glxext.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/vbox/!svn/ver/4172/trunk/include/VBox/HostServices/glxext.h
+END
+VBoxClipboardExt.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vbox/!svn/ver/28800/trunk/include/VBox/HostServices/VBoxClipboardExt.h
+END
+VBoxOGLOp.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/vbox/!svn/ver/28800/trunk/include/VBox/HostServices/VBoxOGLOp.h
+END
+VBoxOpenGLSvc.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/vbox/!svn/ver/28800/trunk/include/VBox/HostServices/VBoxOpenGLSvc.h
+END
+glext.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/vbox/!svn/ver/4172/trunk/include/VBox/HostServices/glext.h
+END
+GuestControlSvc.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vbox/!svn/ver/34556/trunk/include/VBox/HostServices/GuestControlSvc.h
+END
+VBoxCrOpenGLSvc.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/vbox/!svn/ver/34571/trunk/include/VBox/HostServices/VBoxCrOpenGLSvc.h
+END
+Makefile.kup
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vbox/!svn/ver/34556/trunk/include/VBox/HostServices/Makefile.kup
+END
+GuestPropertySvc.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/vbox/!svn/ver/33540/trunk/include/VBox/HostServices/GuestPropertySvc.h
+END

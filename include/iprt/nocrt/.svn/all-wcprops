@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/vbox/!svn/ver/29263/trunk/include/iprt/nocrt
+END
+math.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/math.h
+END
+stddef.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/stddef.h
+END
+fenv.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/fenv.h
+END
+inttypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/inttypes.h
+END
+limits.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vbox/!svn/ver/29263/trunk/include/iprt/nocrt/limits.h
+END
+stdlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/stdlib.h
+END
+setjmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/setjmp.h
+END
+stdarg.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/stdarg.h
+END
+string.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/string.h
+END

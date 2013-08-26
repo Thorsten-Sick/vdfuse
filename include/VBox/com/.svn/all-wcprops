@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/vbox/!svn/ver/35913/trunk/include/VBox/com
+END
+MultiResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/vbox/!svn/ver/30739/trunk/include/VBox/com/MultiResult.h
+END
+VirtualBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vbox/!svn/ver/30825/trunk/include/VBox/com/VirtualBox.h
+END
+assert.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vbox/!svn/ver/28800/trunk/include/VBox/com/assert.h
+END
+ptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/32844/trunk/include/VBox/com/ptr.h
+END
+ErrorInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vbox/!svn/ver/35517/trunk/include/VBox/com/ErrorInfo.h
+END
+string.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/vbox/!svn/ver/35128/trunk/include/VBox/com/string.h
+END
+errorprint.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vbox/!svn/ver/33766/trunk/include/VBox/com/errorprint.h
+END
+listeners.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vbox/!svn/ver/35724/trunk/include/VBox/com/listeners.h
+END
+com.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/35638/trunk/include/VBox/com/com.h
+END
+array.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vbox/!svn/ver/35913/trunk/include/VBox/com/array.h
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/35913/trunk/include/VBox/com/defs.h
+END
+AutoLock.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/vbox/!svn/ver/30501/trunk/include/VBox/com/AutoLock.h
+END
+VirtualBoxErrorInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/vbox/!svn/ver/30714/trunk/include/VBox/com/VirtualBoxErrorInfo.h
+END
+Makefile.kup
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vbox/!svn/ver/34071/trunk/include/VBox/com/Makefile.kup
+END
+EventQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vbox/!svn/ver/31598/trunk/include/VBox/com/EventQueue.h
+END
+Guid.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/34071/trunk/include/VBox/com/Guid.h
+END

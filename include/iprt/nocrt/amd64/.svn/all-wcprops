@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/amd64
+END
+math.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/amd64/math.h
+END
+fenv.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/nocrt/amd64/fenv.h
+END

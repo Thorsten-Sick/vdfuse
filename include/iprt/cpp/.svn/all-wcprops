@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/vbox/!svn/ver/35567/trunk/include/iprt/cpp
+END
+exception.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/vbox/!svn/ver/30949/trunk/include/iprt/cpp/exception.h
+END
+utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/vbox/!svn/ver/30746/trunk/include/iprt/cpp/utils.h
+END
+xml.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/vbox/!svn/ver/35128/trunk/include/iprt/cpp/xml.h
+END
+autores.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/vbox/!svn/ver/28800/trunk/include/iprt/cpp/autores.h
+END
+ministring.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/vbox/!svn/ver/35567/trunk/include/iprt/cpp/ministring.h
+END
+lock.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/vbox/!svn/ver/31088/trunk/include/iprt/cpp/lock.h
+END
