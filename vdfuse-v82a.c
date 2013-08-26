@@ -139,6 +139,7 @@ typedef struct
 Partition partitionTable[HOSTPARTITION_MAX + 1];	// Note the partitionTable[0] is reserved for the EntireDisk descriptor
 static int lastPartition = 0;
 
+// Preparing FUSE features
 static struct fuse_operations fuseOperations = {
 	.readdir = VD_readdir,
 	.getattr = VD_getattr,
@@ -317,6 +318,10 @@ main (int argc, char **argv)
 //                                  Miscellaneous output utilities
 //====================================================================================================
 
+/**
+ * Output usage and exit the program
+ * @param optFormat Optional format string to print before the default output
+ */
 void
 usageAndExit (char *optFormat, ...)
 {
@@ -354,6 +359,11 @@ usageAndExit (char *optFormat, ...)
 	exit (1);
 }
 
+/**
+ * Debug print function for verose output
+ *
+ * @param format Format string
+ */
 void
 vbprintf (const char *format, ...)
 {
@@ -391,16 +401,17 @@ vdErrorCallback (void *pvUser UNUSED, int rc, const char *file,
 }
 
 
-//====================================================================================================
-//                                        MBR + EBR parsing routine
-//====================================================================================================
-//
-// This code is algorithmically based on partRead in VBoxInternalManage.cpp plus the Wikipedia articles
-// on MBR and EBR. As in partRead, a statically allocated partition list is used same  to keep things
-// simple (but up to a max 100 partitions :lol:).  Note than unlike partRead, this doesn't resort the
-// partitions.
-//
-//int VDRead(PVBOXHDD pDisk, uint64_t uOffset, void *pvBuf, size_t cbRead, int ii );
+/**====================================================================================================
+ *                                         MBR + EBR parsing routine
+ * ====================================================================================================
+ *
+ * This code is algorithmically based on partRead in VBoxInternalManage.cpp plus the Wikipedia articles
+ * on MBR and EBR. As in partRead, a statically allocated partition list is used same  to keep things
+ * simple (but up to a max 100 partitions :lol:).  Note than unlike partRead, this doesn't resort the
+ * partitions.
+ * 
+ * int VDRead(PVBOXHDD pDisk, uint64_t uOffset, void *pvBuf, size_t cbRead, int ii );
+*/
 
 void
 initialisePartitionTable (void)
@@ -513,6 +524,11 @@ initialisePartitionTable (void)
 	vbprintf ("\n");
 }
 
+/**
+ * 
+ *
+ *
+ */
 int
 findPartition (const char *filename)
 {
@@ -527,7 +543,11 @@ findPartition (const char *filename)
 	return -1;
 }
 
-// detects type of virtual image
+/** detects type of virtual image
+ *
+ * @param disktype Out: Type of the disk
+ * @param filename VM Disk to test for disk type
+ */
 int
 detectDiskType (char **disktype, char *filename)
 {
@@ -560,6 +580,10 @@ detectDiskType (char **disktype, char *filename)
 pthread_mutex_t disk_mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t part_mutex = PTHREAD_MUTEX_INITIALIZER;
 
+/**
+ * Close the disk
+ * @param UNUSED yes, this is unused
+ */
 void
 VD_destroy (void *u UNUSED)
 {
@@ -568,6 +592,11 @@ VD_destroy (void *u UNUSED)
 	DISKclose;
 }
 
+/**
+ * Make sure the on disk representation of a virtual HDD is up to date.
+ * @param p Additional info for -v output
+ * @param UNUSED
+ */
 int
 VD_flush (const char *p, struct fuse_file_info *i UNUSED)
 {
@@ -576,6 +605,12 @@ VD_flush (const char *p, struct fuse_file_info *i UNUSED)
 	return 0;
 }
 
+/**
+ * 
+ * @param p Partition
+ * @param stbuf out: Results
+ * @return 0
+ */
 static int
 VD_getattr (const char *p, struct stat *stbuf)
 {
@@ -620,6 +655,12 @@ VD_getattr (const char *p, struct stat *stbuf)
 	return 0;
 }
 
+/**
+ * Open Partition
+ * @param cName Partition name
+ * @param i Fuse file info
+ * @return 0
+ */
 static int
 VD_open (const char *cName, struct fuse_file_info *i)
 {
@@ -642,6 +683,12 @@ VD_open (const char *cName, struct fuse_file_info *i)
 	return 0;
 }
 
+/**
+ * Open Partition
+ * @param cName Partition name
+ * @param i Fuse file info
+ * @return 0
+ */
 static int
 VD_release (const char *name, struct fuse_file_info *fi)
 {
@@ -661,6 +708,15 @@ VD_release (const char *name, struct fuse_file_info *fi)
 	return 0;
 }
 
+/**
+ * Read from a file
+ * @param c
+ * @param out
+ * @param len
+ * @param offset
+ * @param i
+ * @return length read or -EIO
+ */
 static int
 VD_read (const char *c, char *out, size_t len, off_t offset,
 				 struct fuse_file_info *i UNUSED)
@@ -687,6 +743,15 @@ VD_read (const char *c, char *out, size_t len, off_t offset,
 	return RT_SUCCESS (ret) ? (signed) len : -EIO;
 }
 
+/**
+ * Read from a file
+ * @param p
+ * @param buf
+ * @param filler
+ * @param offset
+ * @param i
+ * @return o or -ENOENT
+ */
 static int
 VD_readdir (const char *p, void *buf, fuse_fill_dir_t filler,
 						off_t offset UNUSED, struct fuse_file_info *i UNUSED)
@@ -706,6 +771,15 @@ VD_readdir (const char *p, void *buf, fuse_fill_dir_t filler,
 	return 0;
 }
 
+/**
+ * Write to an open file
+ * @param c
+ * @param in
+ * @param len
+ * @param offset
+ * @param i
+ * @return written length or -EIO
+ */
 static int
 VD_write (const char *c, const char *in, size_t len, off_t offset,
 					struct fuse_file_info *i UNUSED)
