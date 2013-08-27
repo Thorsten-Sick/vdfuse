@@ -47,6 +47,7 @@
 #define MBR_START 446
 #define EBR_START 446
 #define PARTTYPE_IS_EXTENDED(x) ((x) == 0x05 || (x) == 0x0f || (x) == 0x85)
+#define VERSION "0.83"
 
 void usageAndExit (char *optFormat, ...);
 void vbprintf (const char *format, ...);
@@ -343,7 +344,8 @@ usageAndExit (char *optFormat, ...)
 					 "VirtualBox supported VD image file and mount it as a Fuse file system.  The\n"
 					 "mount point contains a flat directory containing the files EntireDisk,\n"
 					 "Partition1 .. PartitionN.  These can then be loop mounted to access the\n"
-					 "underlying file systems\n\n"
+					 "underlying file systems\n"
+                     "Version: %s\n\n"
 					 "USAGE: %s [options] -f image-file mountpoint\n"
 					 "\t-h\thelp\n" "\t-r\treadonly\n"
 #ifndef OLDAPI
@@ -359,7 +361,7 @@ usageAndExit (char *optFormat, ...)
 					 "\t-d\tdebug\n\n"
 					 "NOTE: you must add the line \"user_allow_other\" (without quotes)\n"
 					 "to /etc/fuse.confand set proper permissions on /etc/fuse.conf\n"
-					 "for this to work.\n", processName);
+					 "for this to work.\n", VERSION, processName);
 	exit (1);
 }
 
