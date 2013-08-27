@@ -2,6 +2,7 @@
  * http://forums.virtualbox.org/viewtopic.php?p=59275                   *
  * Reworked with Terry Ellison                                          *
  * Reworked by Gordon Miller                                            *
+ * Reworked by Thorsten Sick                                            *
  * vdfuse-v82.c - tool for mounting VDI/VMDK/VHD files                  *
  *                                                                      *
  * This program is free software: you can redistribute it and/or modify *
