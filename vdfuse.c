@@ -82,13 +82,8 @@ void VD_destroy (void *u);
 PVBOXHDD hdDisk;
 PVDINTERFACE pVDifs = NULL;
 VDINTERFACE vdError;
-/*
-VDINTERFACEERROR vdErrorCallbacks = {
-	.cbSize = sizeof (VDINTERFACEERROR),
-	.enmInterface = VDINTERFACETYPE_ERROR,
-	.pfnError = vdErrorCallback
-};
-*/
+VDINTERFACEERROR vdInterfaceError;
+
 // Partition table information
 
 typedef struct
@@ -188,6 +183,7 @@ main (int argc, char **argv)
 
 	extern char *optarg;
 	extern int optind, optopt;
+    int rc;
 
 //
 // *** Parse the command line options ***
@@ -267,15 +263,21 @@ main (int argc, char **argv)
 // *** Open the VDI, parse the MBR + EBRs and connect to the fuse service ***
 //
 
-// Replaced for test Thorsten
-//	if (RT_FAILURE (VDInterfaceAdd (&vdError, "VD Error", VDINTERFACETYPE_ERROR,
-//																	&vdErrorCallbacks, 0, &pVDifs)))
+    vdInterfaceError.pfnError = vdErrorCallback;
+	rc = VDInterfaceAdd (&vdInterfaceError.Core, "VD Error", VDINTERFACETYPE_ERROR,
+																	NULL, 0, &pVDifs);
+    
+    if (RT_FAILURE(rc))
+    {
+        usageAndExit ("invalid initialisation of VD interface");
+    }
 
-    if (RT_FAILURE (VDInterfaceAdd (&vdError, "VD Error", VDINTERFACETYPE_ERROR,
-																	NULL, 0, &pVDifs)))
-		usageAndExit ("invalid initialisation of VD interface");
-	if (RT_FAILURE (VDCreate (&vdError, VDTYPE_HDD, &hdDisk)))
-		usageAndExit ("invalid initialisation of VD interface");
+    rc = VDCreate(&vdError, VDTYPE_HDD, &hdDisk);
+    if (RT_FAILURE(rc))
+    {
+        usageAndExit ("invalid initialisation of VD interface");
+    }
+
     vbprintf ("Opening base image %s", imagefilename);
 	DISKopen (diskType, imagefilename);
 
